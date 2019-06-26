@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="scrollview"
+            android:background="#faf"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_linear"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="#faf"
+                android:text="Linear Layout"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_relative"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="#faf"
+                android:text="Relative Layout"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_frame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="#faf"
+                android:text="Frame Layout"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="#faf"
+                android:text="Constraint Layout"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

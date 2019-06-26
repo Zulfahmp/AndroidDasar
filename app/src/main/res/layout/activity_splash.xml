@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:airbnb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/tvBiodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:text="Android Dasar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/mm"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        airbnb:lottie_fileName="data.json"
+        airbnb:lottie_autoPlay="true"
+        airbnb:lottie_loop="true"/>
+
+</LinearLayout>
