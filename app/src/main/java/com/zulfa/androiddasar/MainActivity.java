@@ -14,14 +14,20 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    TextView gmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        gmail = findViewById(R.id.tvgmail);
+//        gmail.setText(getIntent().getExtras().getString("Email"));
 
         MenghitungLuas fragment = new MenghitungLuas();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -80,6 +86,9 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         Fragment fragment = null;
+
+        gmail = findViewById(R.id.tvgmail);
+        gmail.setText(getIntent().getExtras().getString("Email"));
 
         int id = item.getItemId();
 

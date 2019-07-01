@@ -20,7 +20,7 @@ public class MenghitungLuas extends Fragment {
 
     EditText edSisi;
     Button btnHitung;
-    TextView tvHasil;
+    TextView tvHasil,tvemaill;
     Spinner spinnerPilihan;
     String[] pilihanHitung = {"Volume", "Keliling", "Luas Permukaan"};
 
@@ -39,6 +39,10 @@ public class MenghitungLuas extends Fragment {
         btnHitung = view.findViewById(R.id.btn_hitung);
         tvHasil = view.findViewById(R.id.tv_hasil);
         spinnerPilihan = view.findViewById(R.id.spinner_pilihan);
+
+        tvemaill = view.findViewById(R.id.tvemail);
+        tvemaill.setText(getActivity().getIntent().getExtras().getString("Email"));
+
 
         mAdView = view.findViewById(R.id.adView);
         mAdView1 = view.findViewById(R.id.adView1);
