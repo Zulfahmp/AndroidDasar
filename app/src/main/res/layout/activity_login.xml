@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4742AE"
+    android:background="#60E0D1"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="20dp"
     tools:context=".LoginActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email"
         android:textSize="30dp"
@@ -35,7 +36,7 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password"
         android:textSize="30dp"
@@ -56,19 +57,6 @@
 
     </com.github.florent37.materialtextfield.MaterialTextField>
 
-
-    <com.dd.CircularProgressButton
-        android:layout_width="196dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="16dp"
-        android:textColor="#fff"
-        android:textSize="18sp"
-        android:layout_gravity="center"
-        app:cpb_textComplete="Complete"
-        app:cpb_cornerRadius="48dp"
-        app:cpb_textError="Error"
-        app:cpb_textIdle="Upload"/>
-
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
@@ -76,6 +64,7 @@
         android:text="Login"
         android:textStyle="bold"
         android:layout_gravity="center"/>
+
     <Button
         android:id="@+id/Regis"
         android:layout_width="wrap_content"
